@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Jonas Cordero</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .profile-section img {
+            border-radius: 50%;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            border-radius: 15px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Juancito Peña</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#profile">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección del Perfil -->
+    <section id="profile" class="profile-section text-center my-5 py-5">
+        <div class="container">
+            <h2>Desarrollador Frontend (UI/UX)</h2>
+            <img src="Jonasfoto.jpg" alt="Perfil de Jonas Cordero" class="my-3">
+            <h3>Jonas Cordero</h3>
+            <p>Ingeniero en Sistemas y Computación | Programador FullStack | Frontend y Backend | Analista de Datos Senior</p>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="projects" class="projects-section my-5 py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Proyectos</h2>
+            <div class="row">
+                <!-- Tarjeta de Proyecto 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="CSS3_logo.png" class="card-img-top" alt="CSS">
+                        <div class="card-body">
+                            <p class="card-text">CSS es un lenguaje de diseño gráfico que permite definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web e interfaces de usuario escritas en HTML.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Csharp_logo.png" class="card-img-top" alt="Csharp">
+                        <div class="card-body">
+                            <p class="card-text">C# (pronunciado "C-Sharp") es un lenguaje de programación orientado a objetos desarrollado por Microsoft como parte de su plataforma .NET. Fue creado en el año 2000 bajo la dirección de Anders Hejlsberg y es uno de los lenguajes más populares para el desarrollo de aplicaciones de escritorio, web y móviles, así como para videojuegos utilizando el motor Unity.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Visual_Studio.png" class="card-img-top" alt="Microsoft Visual Studio">
+                        <div class="card-body">
+                            <p class="card-text">Microsoft Visual Studio es un entorno de desarrollo integrado para Windows y macOS. Es compatible con múltiples lenguajes de programación, tales como C++, C#, Fortran, Visual Basic .NET, F#, Java, Python, Ruby y PHP, al igual que entornos de desarrollo web, como ASP.NET MVC, Django, etc., a lo cual hay que sumarle las nuevas capacidades en línea bajo Windows Azure en forma del editor Mónaco.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Videos -->
+    <section id="videos" class="videos-section my-5 py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Videos</h2>
+            <div class="row">
+                <!-- Tarjeta de Video 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VTUFVqXmnWo" allowfullscreen></iframe>
+                        </div>                       
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicacion con XamarinForms</h5>
+                            <p class="card-text">La aplicacion es de un dealer de carro donde puede entrar y ver los diferentes tipos de carro que y marcas que se encuentra disponible.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Video 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZYfFDt7dMPs?start=24" allowfullscreen></iframe>
+                        </div>                      
+                        <div class="card-body">
+                            <h5 class="card-title">Lista de Aplicaciones</h5>
+                            <p class="card-text">Esta aplicacion tiene incluida, tus redes mas sociales mas usada, como son instagram, youtube, facebook, netflix, desde la misma aplicacion puede entrar a todas..</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Video 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aAj2xMG__1o?start=35" allowfullscreen></iframe>
+                        </div>                       
+                        <div class="card-body">
+                            <h5 class="card-title">Lista de Tienda de Ropa Famosa</h5>
+                            <p class="card-text">En esta aplicacion te sale toda la tienda de ropa famosa mas reconocida que puede entrar directamente a su pagina oficial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section my-5 py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nombre">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <label for="subject">Asunto</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6 text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>Sígueme en las redes sociales</p>
+            <a href="" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+            <p class="mt-2">© 2024 Jonas Cordero</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
